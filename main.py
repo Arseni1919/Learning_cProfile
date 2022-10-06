@@ -1,4 +1,5 @@
 import cProfile
+import pstats
 
 
 def create_array():
@@ -17,4 +18,11 @@ def main():
 
 
 if __name__ == '__main__':
-    cProfile.run('main()')
+    profiler = cProfile.Profile()
+    profiler.enable()
+    main()
+    profiler.disable()
+    stats = pstats.Stats(profiler).sort_stats('ncalls')
+    stats = pstats.Stats(profiler).sort_stats('cumtime')
+    # stats.dump_stats('/stats')
+    stats.print_stats()
