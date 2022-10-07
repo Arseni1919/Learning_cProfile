@@ -73,6 +73,12 @@ stats = pstats.Stats(profiler).sort_stats('cumtime')
 stats.dump_stats('/stats')
 ```
 
+## To remove dir prefixes from the output
+
+```python
+stats.strip_dirs()
+```
+
 ## Credits
 
 - [blog | cProfile – How to profile your python code](https://www.machinelearningplus.com/python/cprofile-how-to-profile-your-python-code/)
