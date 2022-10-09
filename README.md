@@ -70,13 +70,19 @@ if __name__ == '__main__':
 
 ```python
 stats = pstats.Stats(profiler).sort_stats('cumtime')
-stats.dump_stats('/stats')
+stats.dump_stats('stats/results.pstat')
 ```
 
 ## To remove dir prefixes from the output
 
 ```python
 stats.strip_dirs()
+```
+
+## To visualize
+
+```shell
+snakeviz stats/results.pstat
 ```
 
 ## Credits

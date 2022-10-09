@@ -2,19 +2,28 @@ import cProfile
 import pstats
 
 
-def create_array():
-    arr = []
-    for i in range(0, 400000):
-        arr.append(i)
+# Code to test visualization
+import random
+# Simple function to print messages
+def print_msg():
+    for i in range(10):
+        print("Program completed")
 
+# Generate random data
+def generate():
+    data = [random.randint(0, 99) for p in range(0, 1000)]
+    return data
 
-def print_statement():
-    print('Array created successfully')
-
+# Function to search
+def search_function(data):
+    for i in data:
+        if i in [100,200,300,400,500]:
+            print("success")
 
 def main():
-    create_array()
-    print_statement()
+    data=generate()
+    search_function(data)
+    print_msg()
 
 
 if __name__ == '__main__':
