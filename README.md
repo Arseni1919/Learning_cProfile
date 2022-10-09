@@ -9,6 +9,13 @@ Python Profilers can answer that question.
 It tells you which part of the code took how long to run. 
 This lets you focus on that particular part and achieve efficiency. 
 
+## Imports
+
+```python
+import cProfile
+import pstats
+```
+
 ## Simple Usage
 
 ```python
