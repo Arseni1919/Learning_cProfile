@@ -88,3 +88,5 @@ snakeviz stats/results.pstat
 ## Credits
 
 - [blog | cProfile – How to profile your python code](https://www.machinelearningplus.com/python/cprofile-how-to-profile-your-python-code/)
+- [snakeviz](https://jiffyclub.github.io/snakeviz/)
+- [The Python Profilers](https://docs.python.org/3/library/profile.html)
